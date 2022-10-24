@@ -1,0 +1,18 @@
+To start a cluster with the high availability mode ON run:
+
+    . make -B ha  
+
+to stop it:  
+
+    . make -B stop-ha
+
+To start a cluster with the high availability mode OFF run:
+
+    . make -B non-ha  
+
+to stop  it:  
+
+    . make -B stop-non-ha
+
+Run kubectl port-forward ${flink-jobmanager-pod} 8081:8081 to forward your jobmanager’s web ui port to local 8081.
+
