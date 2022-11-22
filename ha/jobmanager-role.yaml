@@ -1,0 +1,10 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: flink
+  name: configmap-updater
+rules:
+- apiGroups: [""] # "" indicates the core API group
+  resources: ["configmaps"]
+  resourceNames: ["flink-config"]
+  verbs: ["create", "delete", "update"]
