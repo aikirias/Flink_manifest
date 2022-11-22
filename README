@@ -1,5 +1,8 @@
+ALL IS RUNNING IN MINIKUBE
+
 To start a cluster with the high availability mode ON run:
 
+    . MAKE -B first-ha /*if is the first time that you run ha*/
     . make -B ha  
 
 to stop it:  
@@ -15,4 +18,3 @@ to stop  it:
     . make -B stop-non-ha
 
 Run kubectl port-forward ${flink-jobmanager-pod} 8081:8081 to forward your jobmanager’s web ui port to local 8081.
-
