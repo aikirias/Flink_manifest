@@ -1,5 +1,9 @@
 ALL IS RUNNING IN MINIKUBE
 
+Before of running the makefile you need to download the image in minikube:
+
+    minikube ssh docker pull flink:1.16.0
+
 To start a cluster with the high availability mode ON run:
 
     . MAKE -B first-ha /*if is the first time that you run ha*/
