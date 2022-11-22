@@ -1,5 +1,11 @@
 ALL IS RUNNING IN MINIKUBE
 
+In order to use Flink’s Kubernetes HA services you must fulfill the following prerequisites:
+
+    - Kubernetes >= 1.9.
+    - Service account with permissions to create, edit, delete ConfigMaps. 
+
+
 Before of running the makefile you need to download the image in minikube:
 
     minikube ssh docker pull flink:1.16.0
